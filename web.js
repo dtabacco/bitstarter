@@ -5,6 +5,7 @@ app.use(express.logger());
 app.get('/', function(request, response) {
 
 //Modified Code for Assignment
+var fs = require('fs');
 fs.readFile('index.html', function (err, data) {
   if (err) throw err;
   //console.log(data);
